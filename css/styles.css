@@ -136,7 +136,7 @@ nav {
         font-size: 26px; }
       nav ul li a {
         text-decoration: none;
-        color: rgba(52, 68, 83, 0.459); }
+        color: rgba(27, 36, 44, 0.836); }
       nav ul li i {
         margin-right: .5vw; }
 
@@ -165,7 +165,8 @@ main {
     font-size: 13px; }
   main img {
     width: 100%;
-    margin-bottom: 2vw; }
+    margin-bottom: 2vw;
+    max-width: 1152px; }
   main div#div1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

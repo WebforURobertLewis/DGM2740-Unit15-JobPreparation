@@ -55,7 +55,7 @@ li a:hover{
         }
         a{
             text-decoration: none;
-            color: rgba(52, 68, 83, 0.459);
+            color: rgba(27, 36, 44, 0.836);
 
         }
         i{
@@ -101,6 +101,7 @@ main{
     img{
         width: 100%;
         margin-bottom: $gutter;
+        max-width: 1152px;
     }
         background-color: lighten($primaryColor, 50%);
     div#div1{
