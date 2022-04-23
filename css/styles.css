@@ -165,8 +165,7 @@ main {
     font-size: 13px; }
   main img {
     width: 100%;
-    margin-bottom: 2vw;
-    max-width: 1152px; }
+    margin-bottom: 2vw; }
   main div#div1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
