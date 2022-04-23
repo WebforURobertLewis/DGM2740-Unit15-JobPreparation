@@ -1,0 +1,315 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #dcf5f7;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  width: 100%;
+  margin: auto;
+  max-width: 72rem;
+  background-color: #c7f0f3; }
+  header hr {
+    position: relative;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: 62px; }
+  header img.logo {
+    margin-top: 2vw; }
+
+nav {
+  background-color: #c7f0f3;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  max-width: 72rem;
+  margin: auto;
+  padding-top: 0.6666666667vw;
+  padding-bottom: 0.6666666667vw; }
+  nav ul {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    nav ul li a:hover {
+      color: #0480b1; }
+    nav ul li {
+      padding: 0;
+      margin-right: 5vw;
+      clear: both; }
+      nav ul li i {
+        font-size: 26px; }
+      nav ul li a {
+        text-decoration: none;
+        color: rgba(52, 68, 83, 0.459); }
+      nav ul li i {
+        margin-right: .5vw; }
+
+main {
+  background-color: #c7f0f3; }
+  main a {
+    text-decoration: none;
+    color: inherit; }
+  main a:hover :not(button) {
+    color: #0480b1; }
+  main div#gridAreas h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: #0480b1;
+    letter-spacing: 2px;
+    margin-top: 4vw;
+    margin-bottom: -15px;
+    margin-left: 2vw; }
+  main div#gridAreas h2 {
+    color: #0480b1;
+    font-size: 26px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    font-weight: 300; }
+  main div#gridAreas p {
+    font-size: 13px; }
+  main img {
+    width: 100%;
+    margin-bottom: 2vw; }
+  main div#div1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white; }
+    main div#div1 div#div11:nth-child(1) {
+      grid-column: 1/span 3; }
+    main div#div1 h1 {
+      color: #fdd831; }
+    main div#div1 ul#bestList {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      margin-bottom: 4vw;
+      font-size: 16px; }
+      main div#div1 ul#bestList li {
+        margin-left: 33%; }
+    main div#div1 div#div11 {
+      margin-right: 2vw;
+      padding-left: 2vw; }
+      main div#div1 div#div11 h1#Expecth1 {
+        font-size: 26px;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+        font-weight: 400; }
+      main div#div1 div#div11 h2 {
+        font-size: 13px;
+        margin-bottom: 2vw;
+        font-weight: 100; }
+    main div#div1 div#div12 {
+      text-align: right;
+      padding: 2vw; }
+      main div#div1 div#div12 h1#ourFormula {
+        font-size: 26px;
+        padding-bottom: 2vw; }
+      main div#div1 div#div12 h2 {
+        font-size: 20px; }
+    main div#div1 h1#h1Success {
+      font-size: 36px;
+      padding-top: 2vw; }
+  main div#moreAboutUS {
+    display: grid;
+    background-color: #c7f0f3;
+    grid-template-columns: 1fr 1fr; }
+    main div#moreAboutUS div {
+      margin: 2vw; }
+  main div#aboutUsTwo {
+    background-color: #d4f3f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; }
+    main div#aboutUsTwo div {
+      margin: 2vw; }
+    main div#aboutUsTwo div#pricing {
+      grid-row: 3/ span 1;
+      grid-column: 1/ span 1;
+      display: flex;
+      flex-direction: column;
+      contain: content; }
+      main div#aboutUsTwo div#pricing p {
+        font-size: x-small;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px; }
+      main div#aboutUsTwo div#pricing button {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -80px;
+        width: 75%;
+        border-radius: 3em;
+        background-color: #0480b1;
+        color: white; }
+    main div#aboutUsTwo div.AU {
+      grid-row: 1;
+      grid-column: span 2; }
+    main div#aboutUsTwo div#Tech {
+      grid-column: 1/ span 4; }
+      main div#aboutUsTwo div#Tech h2 {
+        text-align: left; }
+      main div#aboutUsTwo div#Tech p {
+        text-align: left; }
+    main div#aboutUsTwo div#logos {
+      grid-template-rows: 1fr 1fr;
+      grid-column: 2/ span 3; }
+      main div#aboutUsTwo div#logos div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: end; }
+      main div#aboutUsTwo div#logos img {
+        padding: 2vw; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding: 12.5px;
+  background-image: linear-gradient(#229199, #329);
+  color: white; }
+
+@media only screen and (min-width: 35rem) {
+  nav ul {
+    justify-content: right; }
+
+  main {
+    max-width: 1152px;
+    margin: auto; }
+    main div#moreAboutUS {
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+    main div#aboutUsTwo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; }
+      main div#aboutUsTwo div#pricing {
+        grid-row: 1/ span 2;
+        grid-column: 3/ span 1;
+        display: flex;
+        flex-direction: column; }
+      main div#aboutUsTwo div.AU {
+        grid-row: 1;
+        grid-column: span 1; }
+      main div#aboutUsTwo div#Tech {
+        grid-column: 1/ span 2; }
+        main div#aboutUsTwo div#Tech h2 {
+          text-align: left; }
+      main div#aboutUsTwo div#logos {
+        grid-template-rows: 1fr 1fr;
+        grid-column: 1/ span 4; }
+        main div#aboutUsTwo div#logos div {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr; }
+        main div#aboutUsTwo div#logos img {
+          padding: 2vw;
+          vertical-align: bottom; }
+
+  div#div1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white; }
+    div#div1 div#div11:nth-child(1) {
+      grid-column: 1/span 3; }
+    div#div1 h1 {
+      color: yellow; } }
+
+/*# sourceMappingURL=styles.css.map */

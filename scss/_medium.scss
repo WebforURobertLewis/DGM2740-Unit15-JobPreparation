@@ -1,0 +1,59 @@
+
+nav ul{
+        justify-content: right;
+    }
+main{
+    max-width: 1152px;
+    margin: auto;
+    div#moreAboutUS{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    div#aboutUsTwo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        //grid-template-rows: 1fr 1fr;
+        
+        div#pricing{
+            grid-row: 1/ span 2;
+            grid-column: 3/ span 1;
+            display: flex;
+            flex-direction: column;
+        }
+        div.AU{
+            grid-row: 1;
+            grid-column: span 1;
+        }
+        div#Tech{
+            grid-column: 1/ span 2;
+            h2{
+                text-align: left;
+            }
+        }
+        div#logos{
+            grid-template-rows: 1fr 1fr;
+            grid-column: 1/ span 4;
+            div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            }
+            img{
+                padding: $gutter;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+
+
+ div#div1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    div#div11:nth-child(1){grid-column: 1/span 3;}
+    background-color: black;
+    color: white;
+    h1{
+        color: yellow;
+    }
+}
