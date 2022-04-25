@@ -1,0 +1,91 @@
+
+
+nav ul{
+    justify-content: right;
+}
+main{
+max-width: 1152px;
+margin: auto;
+}
+
+div#aboutUsTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr;
+    
+
+
+}
+    div.moreAboutUs{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img{
+        width: auto;
+    }
+    h2, p{
+        margin: 0;
+    }
+    
+}
+div#AboutUsTwo{
+    margin: 0;
+    padding: 0;
+    img{
+        width: auto;
+        
+    }
+    h2, p{
+        margin: 0;
+        margin-right: $gutter;
+        margin-left: $gutter;
+    }
+}
+div#logos img{
+    margin: 0;
+}
+div#pricing{
+    margin-top: -$gutter/2;
+    grid-row: 1/ span 2;
+    grid-column: 3/ span 1;
+    display: flex;
+    flex-direction: column;
+    button{
+        width: 50%;
+        margin-bottom: 12px;
+        margin-top: -120px;
+    }
+}
+div.AU{
+    grid-row: 1;
+    grid-column: span 1;
+}
+div#Tech{
+    grid-column: 1/ span 2;
+    h2{
+        text-align: left;
+    }
+}
+div#logos{
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1/ span 4;
+    div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    }
+    img{
+        padding: $gutter;
+        vertical-align: bottom;
+        width: auto;
+    }
+}
+
+div#div1{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+div#div11:nth-child(1){grid-column: 1/span 3;}
+background-color: black;
+color: white;
+h1{
+    color: yellow;
+}
+}

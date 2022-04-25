@@ -1,6 +1,7 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
+}
 
 body{
     background-color: lighten($primaryColor, 55%);
@@ -77,29 +78,13 @@ main{
         color: #0480b1;
         
     }
-    div#gridAreas{
-        h1{
-            font-size: 32px;
-            font-weight: 300;
-            color: $fontColor;
-            letter-spacing: 2px;
-            margin-top: $gutter*2;
-            margin-bottom: -15px;
-            margin-left: $gutter;
-        }
-        h2{
-            color: $fontColor;
-            font-size: 26px;
-            padding-top: 15px;
-            padding-bottom: 8px;
-            font-weight: 300;
-        }
-        p{
-            font-size: 13px;
-        }
+    
+    img.HeroImg{
+        width: 100%;
     }
-    img{
+    img.HeroImg{
         margin-bottom: $gutter;
+        contain: content;
     }
         background-color: lighten($primaryColor, 50%);
     div#div1{
@@ -112,7 +97,7 @@ main{
 
         h1{
             color: #fdd831;
-
+            
         }
 
         ul#bestList{
@@ -160,68 +145,172 @@ main{
         }
     }
 
-    div#moreAboutUS{
-        display: grid;
-        background-color: lighten($primaryColor, 50%);
-        grid-template-columns: 1fr 1fr;
-        div{margin: $gutter;}
+}
+//End Main
+
+div.moreAboutUs{
+    display: grid;
+    background-color: lighten($primaryColor, 50%);
+    grid-template-columns: 1fr 1fr;
+    div{margin: $gutter;}
+    div{ text-align: center;}
+    img{ width: 33vw; margin-top: $gutter * 2;}
+    div h2{
+        text-align: left;
     }
-div#aboutUsTwo{
+    p, h2 {
+        margin-right: $gutter*3;
+        margin-left: $gutter*3;
+    }
+}
+
+
+div#gridAreas{
+    
+    h1{
+        font-size: 32px;
+        font-weight: 300;
+        color: $fontColor;
+        letter-spacing: 2px;
+        margin-top: $gutter*2;
+        margin-bottom: -15px;
+        margin-left: $gutter;
+    }
+    h2{
+        color: $fontColor;
+        font-size: 26px;
+        padding-top: 15px;
+        padding-bottom: 8px;
+        font-weight: 300;
+    }
+    p{
+        font-size: 13px;
+        width: auto;
+        text-align: left;
+    }
+}
+div.AU1{
+            display: grid;
+            width: auto;
+            grid-template-columns: 1fr;
+            grid-column: 1/ span 1;
+            margin: $gutter;
+            text-align: center;
+            img{
+                width: 34vw;
+                justify-content: center;
+                margin: $gutter;
+
+            }
+            p, h2 {
+                margin-right: $gutter*2.5;
+                margin-left: $gutter *2.5;
+                text-align: left;
+            }
+}
+div.AU2{
+    display: grid;
+    grid-column: 2/ span 1;
+    width: auto;
+    grid-auto-columns: auto;
+    margin: $gutter;
+    text-align: center;
+    img{
+        width: 34vw;
+        justify-content: center;
+        text-align: center;
+        margin: $gutter;
+
+    }
+    p, h2 {
+        margin-right: $gutter*2.5;
+        margin-left: $gutter *2.5;
+        text-align: left;
+    }
+}
+div#AboutUsTwo{
     background-color: lighten($primaryColor, 53%);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    div{
-        margin: $gutter;
-    }
+
+
     //grid-template-rows: 1fr 1fr;
 
-    div#pricing{
-        grid-row: 3/ span 1;
-        grid-column: 1/ span 1;
-        display: flex;
-        flex-direction: column;
-        contain: content;
-        p{
-            font-size: x-small;
-            text-align: center;
-            margin: auto;
-            margin-top: 10px;
-        }
-        button{
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: -80px;
-            width: 75%;
-            border-radius: 3em;
-            background-color: #0480b1;
-            color: white;
-        }
-    }
-    div.AU{
-        grid-row: 1;
-        grid-column: span 2;
-    }
-    div#Tech{
-        grid-column: 1/ span 4;
-        h2{text-align: left;}
-        p{text-align: left;}
-    }
-    //Logos
-    div#logos{
-        grid-template-rows: 1fr 1fr;
-        grid-column: 2/ span 3;
-        div{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: end;
-        }
-        img{
-            padding: $gutter;
+ 
 
-        }
-        //end Logos
+    //Logos
+
+}
+
+div#Tech{
+    grid-column: 1/ span 4;
+    margin: $gutter;
+    h2{
+        text-align: left;
+        margin-right: 6vw;
+    margin-left: 4vw;}
+    p{
+    text-align: left;
+    width: auto;    
+    margin-right: 6vw;
+    margin-left: 4vw;
+}
+}
+div#pricing{
+    img{
+
+    width: 37vw;
+    margin: 3vw;}
+
+}
+div#pricing{
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 1;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+
+
+    p{
+        font-size: x-small;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+
+    }
+    button{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -80px;
+        width: 25vw;
+        border-radius: 3em;
+        background-color: #0480b1;
+        color: white;
+
+    }
+}
+div#logos{
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2/ span 1;
+    div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: end;
+    
+    }
+    img{
+
+        width: 100px;
+        margin-top: 9vw;
+
+
+    }
+    //end Logos
 }
 //Footer
 footer{
