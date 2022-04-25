@@ -99,7 +99,6 @@ main{
         }
     }
     img{
-        width: 100%;
         margin-bottom: $gutter;
     }
         background-color: lighten($primaryColor, 50%);
@@ -169,11 +168,9 @@ main{
     }
 div#aboutUsTwo{
     background-color: lighten($primaryColor, 53%);
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-
     div{
         margin: $gutter;
     }
@@ -225,12 +222,7 @@ div#aboutUsTwo{
 
         }
         //end Logos
-    }
 }
-
-}
-//End Main
-
 //Footer
 footer{
     position:relative;

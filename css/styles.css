@@ -213,17 +213,43 @@ main {
     grid-template-columns: 1fr 1fr; }
     main div#moreAboutUS div {
       margin: 2vw; }
-  main div#aboutUsTwo {
-    background-color: #d4f3f5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto; }
-    main div#aboutUsTwo div {
-      margin: 2vw; }
-    main div#aboutUsTwo div#pricing {
-      grid-row: 3/ span 1;
-      grid-column: 1/ span 1;
-      display: flex;
+
+div#gridAreas h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #0480b1;
+  letter-spacing: 2px;
+  margin-top: 4vw;
+  margin-bottom: -15px;
+  margin-left: 2vw; }
+div#gridAreas h2 {
+  color: #0480b1;
+  font-size: 26px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  font-weight: 300; }
+div#gridAreas p {
+  font-size: 13px; }
+
+div.AU1 {
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column: 1/ span 2; }
+
+div.AU2 {
+  grid-column: 2/ span 2; }
+
+div#AboutUsTwo {
+  background-color: #d4f3f5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+  div#AboutUsTwo div {
+    margin: 2vw; }
+  div#AboutUsTwo div#pricing {
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 1;
+    display: flex;
       flex-direction: column;
       contain: content; }
       main div#aboutUsTwo div#pricing p {
@@ -244,20 +270,20 @@ main {
       grid-column: span 2; }
     main div#aboutUsTwo div#Tech {
       grid-column: 1/ span 4; }
-      main div#aboutUsTwo div#Tech h2 {
-        text-align: left; }
+  div#Tech h2 {
+    text-align: left; }
       main div#aboutUsTwo div#Tech p {
         text-align: left; }
     main div#aboutUsTwo div#logos {
       grid-template-rows: 1fr 1fr;
       grid-column: 2/ span 3; }
-      main div#aboutUsTwo div#logos div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: end; }
-      main div#aboutUsTwo div#logos img {
-        padding: 2vw; }
+  div#logos div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: end; }
+  div#logos img {
+    padding: 2vw; }
 
 footer {
   position: relative;
@@ -269,47 +295,6 @@ footer {
 
 @media only screen and (min-width: 35rem) {
   nav ul {
-    justify-content: right; }
-
-  main {
-    max-width: 1152px;
-    margin: auto; }
-    main div#moreAboutUS {
-      grid-template-columns: 1fr 1fr 1fr 1fr; }
-    main div#aboutUsTwo {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr; }
-      main div#aboutUsTwo div#pricing {
-        grid-row: 1/ span 2;
-        grid-column: 3/ span 1;
-        display: flex;
-        flex-direction: column; }
-      main div#aboutUsTwo div.AU {
-        grid-row: 1;
-        grid-column: span 1; }
-      main div#aboutUsTwo div#Tech {
-        grid-column: 1/ span 2; }
-        main div#aboutUsTwo div#Tech h2 {
-          text-align: left; }
-      main div#aboutUsTwo div#logos {
-        grid-template-rows: 1fr 1fr;
-        grid-column: 1/ span 4; }
-        main div#aboutUsTwo div#logos div {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr; }
-        main div#aboutUsTwo div#logos img {
-          padding: 2vw;
-          vertical-align: bottom; }
-
-  div#div1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: black;
-    color: white; }
-    div#div1 div#div11:nth-child(1) {
-      grid-column: 1/span 3; }
-    div#div1 h1 {
-      color: yellow; } }
+    justify-content: right; } }
 
 /*# sourceMappingURL=styles.css.map */
