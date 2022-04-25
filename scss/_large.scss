@@ -18,11 +18,18 @@ div#aboutUsTwo{
 }
     div.moreAboutUs{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    margin-left: $gutter;
+    margin-right: $gutter;
+    margin-bottom: $gutter*3;
     img{
         width: auto;
     }
     h2, p{
         margin: 0;
+        margin-left: $gutter*5;
+        margin-right: $gutter*5;
+        
     }
     
 }
@@ -35,8 +42,8 @@ div#AboutUsTwo{
     }
     h2, p{
         margin: 0;
-        margin-right: $gutter;
-        margin-left: $gutter;
+        margin-left: $gutter*10;
+        margin-right: $gutter*10;
     }
 }
 div#logos img{
@@ -48,20 +55,33 @@ div#pricing{
     grid-column: 3/ span 1;
     display: flex;
     flex-direction: column;
+    margin-right: $gutter*3;
     button{
-        width: 50%;
+        width: 55%;
         margin-bottom: 12px;
-        margin-top: -120px;
+        margin-right: 0;
+        margin-left: 0;
+        align-self: center;
+        
+    }
+    img{
+        margin-top: 0;
+        padding-top: 0;
+        vertical-align: top;
+        width: 87%;
+        margin: 0;
+        padding: 0;
+        align-content: center;
+        align-self: center;
     }
 }
-div.AU{
-    grid-row: 1;
-    grid-column: span 1;
-}
+
 div#Tech{
     grid-column: 1/ span 2;
+    padding-left: 0;
     h2{
         text-align: left;
+ 
     }
 }
 div#logos{

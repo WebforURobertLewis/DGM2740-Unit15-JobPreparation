@@ -113,7 +113,8 @@ main{
         }
         div#div11{
             margin-right: $gutter;
-            padding-left: $gutter;
+            padding-left: $gutter*9;
+            margin-left: $gutter;
             h1#Expecth1{
                 font-size: 26px;
                 padding-bottom: $gutter;
@@ -131,6 +132,8 @@ main{
         div#div12{
             text-align: right;
             padding: $gutter;
+            padding-right: 0;
+            padding-right: $gutter*9;
             h1#ourFormula{
                 font-size: 26px;
                 padding-bottom: $gutter;
@@ -159,8 +162,8 @@ div.moreAboutUs{
         text-align: left;
     }
     p, h2 {
-        margin-right: $gutter*3;
-        margin-left: $gutter*3;
+        margin-right: $gutter*9;
+        margin-left: $gutter*9;
     }
 }
 
@@ -175,11 +178,13 @@ div#gridAreas{
         margin-top: $gutter*2;
         margin-bottom: -15px;
         margin-left: $gutter;
+
+        padding-left: $gutter*9;
     }
     h2{
         color: $fontColor;
         font-size: 26px;
-        padding-top: 15px;
+        padding-top: $gutter;
         padding-bottom: 8px;
         font-weight: 300;
     }
@@ -187,6 +192,13 @@ div#gridAreas{
         font-size: 13px;
         width: auto;
         text-align: left;
+        padding-bottom: $gutter*3;
+    }
+    h2, p{
+        margin: 0;
+        margin-left: $gutter*9;
+        margin-right: $gutter*9;
+        
     }
 }
 div.AU1{
@@ -246,22 +258,24 @@ div#AboutUsTwo{
 div#Tech{
     grid-column: 1/ span 4;
     margin: $gutter;
+    padding-left: $gutter*7;
     h2{
         text-align: left;
-        margin-right: 6vw;
-    margin-left: 4vw;}
+        margin-right: $gutter*3;
+    margin-left: $gutter*2;}
     p{
     text-align: left;
     width: auto;    
-    margin-right: 6vw;
-    margin-left: 4vw;
+    margin-right: $gutter*3;
+    margin-left: $gutter*2
 }
 }
 div#pricing{
     img{
+    width: 34vw;
+    margin-top: $gutter*9;
 
-    width: 37vw;
-    margin: 3vw;}
+}
 
 }
 div#pricing{
